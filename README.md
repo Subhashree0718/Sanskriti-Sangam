@@ -1,5 +1,5 @@
 # Sanskriti-Sangam
-# 🇮🇳 Bharat Darshan - AI-Powered Cultural Tourism Explorer  
+# 🇮🇳 Sanskriti-Sangam -  Cultural Tourism Explorer  
 **Discover India’s Rich Heritage with AI & Data** | *Built for Snowflake x YourStory Hackathon 2025*  
 
 [![Streamlit](https://img.shields.io/badge/Deployed_on-Streamlit-FF4B4B?logo=streamlit)](https://your-streamlit-app-link.com)  
