@@ -618,7 +618,7 @@ class AppPages:
                     img = Utils.get_image(img_path)
                 except:
                     img = Utils.get_image(Config.DEFAULT_IMAGES['state'])
-                st.image(img, use_column_width=True, caption=state)
+                st.image(img, use_container_width=True, caption=state)
                 if st.button(f"Explore {state}", key=f"featured_{state}"):
                     st.session_state['selected_state'] = state
                     st.session_state.page = "🏛️ States"
@@ -639,7 +639,7 @@ class AppPages:
                         img = Utils.get_image(img_path)
                     except:
                         img = Utils.get_image(Config.DEFAULT_IMAGES['state'])
-                    st.image(img, use_column_width=True, caption=state)
+                    st.image(img, use_container_width=True, caption=state)
                     
                     if st.button(f"Explore {state}", key=f"btn_{state}"):
                         st.session_state['selected_state'] = state
@@ -666,7 +666,7 @@ class AppPages:
                 img = Utils.get_image(img_path)
             except:
                 img = Utils.get_image(Config.DEFAULT_IMAGES['state'])
-            st.image(img, use_column_width=True)
+            st.image(img, use_container_width=True)
 
         with col2:
             stats = Utils.generate_stats(state)
@@ -722,7 +722,7 @@ class AppPages:
                             
                             st.image(
                                 image_url,
-                                use_column_width=True,
+                                use_container_width=True,
                                 caption=f"{art_name} from {state}"
                             )
 
@@ -777,7 +777,7 @@ class AppPages:
                     col1, col2 = st.columns([1, 2])
 
                     with col1:
-                        st.image(Utils.get_image(Config.DEFAULT_IMAGES['spot']), use_column_width=True)
+                        st.image(Utils.get_image(Config.DEFAULT_IMAGES['spot']), use_container_width=True)
                         if spot['UNESCO_HERITAGE_SITE']:
                             st.markdown("<div class='heritage-badge'>UNESCO World Heritage Site</div>", unsafe_allow_html=True)
 
@@ -815,7 +815,7 @@ class AppPages:
                 st.markdown(itinerary)
 
             with col2:
-                st.image(Utils.get_image(Config.DEFAULT_IMAGES['food']), use_column_width=True, caption=f"{state} Cuisine")
+                st.image(Utils.get_image(Config.DEFAULT_IMAGES['food']), use_container_width=True, caption=f"{state} Cuisine")
 
     def chatbot_page(self):
         st.title("💬 Sanskriti Sangam AI Guide")
@@ -960,7 +960,7 @@ class AppPages:
             with st.expander(f"{festival['FESTIVAL_NAME']} - {festival['STATE']} ({festival['MONTH']})"):
                 col1, col2 = st.columns([1, 3])
                 with col1:
-                    st.image("https://via.placeholder.com/150", use_column_width=True)
+                    st.image("https://via.placeholder.com/150", use_container_width=True)
                 with col2:
                     st.markdown(f"**When:** {festival['MONTH']}")
                     st.markdown(f"**Where:** {festival['STATE']}")
@@ -1017,7 +1017,7 @@ class AppPages:
                     st.subheader(gem["name"])
                     st.caption(gem["state"])
                     st.image(Utils.get_image(Config.DEFAULT_IMAGES['spot']), 
-                            use_column_width=True)
+                            use_container_width=True)
                     st.write(gem["description"])
                     
                     if st.button("Explore", key=f"gem_{gem['name']}"):
