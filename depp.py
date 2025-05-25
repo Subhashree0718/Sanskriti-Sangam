@@ -502,9 +502,9 @@ class UIComponents:
             st.title("Explore India")
             
             pages = [
-                "🏠 Home", "🗺️ Cultural Map", "🏛️ State Cultures", 
-                "🌟 Hidden Heritage", "📅 Festival Confluence", "💬 Culture AI Guide", 
-                "📊 Insights", "🧳 Travel Planner"
+                "🏠 Home", "🗺️ Interactive Map", "🏛️ States", 
+                "🌟 Hidden Gems", "📅 Festivals", "💬 AI Guide", 
+                "📊 Insights", "🧳 Trip Planner"
             ]
             
             st.session_state.page = st.radio(
@@ -1176,17 +1176,17 @@ def main():
         app.home_page()
     elif st.session_state.page == "🗺️ Interactive Map":
         app.interactive_map_page()
-    elif st.session_state.page == "🏛️ State Cultures":
+    elif st.session_state.page == "🏛️ States":
         app.state_page()
-    elif st.session_state.page == "🌟 Hidden Heritage":
+    elif st.session_state.page == "🌟 Hidden Gems":
         app.hidden_gems_page()
-    elif st.session_state.page == "📅 Festival Confluence":
+    elif st.session_state.page == "📅 Festivals":
         app.festivals_page()
-    elif st.session_state.page == "💬 Culture AI Guide":
+    elif st.session_state.page == "💬 AI Guide":
         app.chatbot_page()
     elif st.session_state.page == "📊 Insights":
         app.insights_page()
-    elif st.session_state.page == "🧳 Travel Planner":
+    elif st.session_state.page == "🧳 Trip Planner":
         app.trip_planner_page()
 
 if __name__ == "__main__":
