@@ -10,3 +10,4 @@ geopy==2.4.1
 faker==19.13.0
 pytz==2023.3
 python-dotenv==1.0.0  
+python-3.10
