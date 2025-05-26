@@ -613,7 +613,8 @@ class AppPages:
         for i, state in enumerate(featured):
             with cols[i]:
                 # Try to load state-specific image, fallback to default
-                img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+                iimg_path = f"assets/images/{state.lower().replace(' ', '_')}.jpg"
+
                 try:
                     img = Utils.get_image(img_path)
                 except:
@@ -634,7 +635,8 @@ class AppPages:
             with cols[i % 4]:
                 with st.container():
                     # Try to load state-specific image, fallback to default
-                    img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+                    img_path = f"assets/images/{state.lower().replace(' ', '_')}.jpg"
+
                     try:
                         img = Utils.get_image(img_path)
                     except:
@@ -658,7 +660,8 @@ class AppPages:
         col1, col2 = st.columns([1, 2])
         with col1:
             # Try to load state-specific image, fallback to default
-            img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+            img_path = f"assets/images/{state.lower().replace(' ', '_')}.jpg"
+
 
 
 
