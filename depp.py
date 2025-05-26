@@ -613,7 +613,7 @@ class AppPages:
         for i, state in enumerate(featured):
             with cols[i]:
                 # Try to load state-specific image, fallback to default
-                iimg_path = f"assets/images/{state.lower().replace(' ', '_')}.jpg"
+                img_path = f"assets/images/{state.lower().replace(' ', '_')}.jpg"
 
                 try:
                     img = Utils.get_image(img_path)
