@@ -50,7 +50,7 @@ class Utils:
             normalized_name = art_name.lower().replace(" ", "_")
             
             # Define the base path to your images folder
-            base_path = "C:/Users/subha/Snowflake/assets/images/"
+            base_path = "assets/images/"
             
             # Possible image extensions to check
             extensions = ['.jpg', '.jpeg', '.png', '.webp']
@@ -613,7 +613,7 @@ class AppPages:
         for i, state in enumerate(featured):
             with cols[i]:
                 # Try to load state-specific image, fallback to default
-                img_path = f"C:\\Users\\subha\\Snowflake\\assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+                img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
                 try:
                     img = Utils.get_image(img_path)
                 except:
@@ -634,7 +634,7 @@ class AppPages:
             with cols[i % 4]:
                 with st.container():
                     # Try to load state-specific image, fallback to default
-                    img_path = f"C:\\Users\\subha\\Snowflake\\assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+                    img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
                     try:
                         img = Utils.get_image(img_path)
                     except:
@@ -658,7 +658,7 @@ class AppPages:
         col1, col2 = st.columns([1, 2])
         with col1:
             # Try to load state-specific image, fallback to default
-            img_path = f"C:\\Users\\subha\\Snowflake\\assets\\images\\{state.lower().replace(' ', '_')}.jpg"
+            img_path = f"assets\\images\\{state.lower().replace(' ', '_')}.jpg"
 
 
 
